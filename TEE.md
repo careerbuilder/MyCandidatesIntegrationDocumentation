@@ -3,11 +3,11 @@
 ## FAQ
 *Why are there more candidates in TEE than in mySupply?*
 
-Not all candidates will be uploaded. IF the candidate does not meet the requirements stated here they will not be found in mysupply. This can sometimes be a lrge percentage (think 50% not 5%) See the filters described later in this document.
+Not all candidates will be uploaded. If the candidate does not meet the requirements stated here they will not be found in mysupply. This can sometimes be a large percentage (think 50% not 5%) See the filters described later in this document.
 
 *Why does a query in TEE not prodcue the same candidates as in myCandidates?*
 
-In general we do not recommend conparing search results form TEE to search results in myCandidates. If you are trying to compare results please try to limit such searhcing to matching an email address for a candidate. The differences can be for several reasons. The primary differnce is that the filters applied in our search interface may not match those in TEE. Another reaosn is that the data in myCandidates reflects the most recent candidate and the client may have had newer data for a particuylar candidate form another source.
+In general we do not recommend comparing search results from TEE to search results in myCandidates. If you are trying to compare results please try to limit such searching to matching an email address for a candidate. The differences can be for several reasons. The primary difference is that the filters applied in our search interface may not match those in TEE. Another reaosn is that the data in myCandidates reflects the most recent candidate and the client may have had newer data for a particuylar candidate form another source.
 
 ## Integration Overview
 Taleo offers a set of APIs utelized by myCandidates known commonly as the "Bulk APIs" but technically referred to as the Integration Mangement Service.
@@ -37,7 +37,7 @@ Further, mysupply requires for all candidates:
 ### Supported Queries
 The integration is configured to allow each client to have a specififc query. The queries determine what data can be populated on the candidate fo rthe client.
 
-Currently there are two supported queries, Profile Entity and Candidate Entity. The Prfoile entity provides the ability to use the pasted resume text value in the event that a candidate does not have an attachment. The validity of this qiuery will vary per client (a client may not have data in this node, the node may not exist, or it may not be valid resume data).
+Currently there are two supported queries, Profile Entity and Candidate Entity. The Profile entity provides the ability to use the pasted resume text value in the event that a candidate does not have an attachment. The validity of this query will vary per client (a client may not have data in this node, the node may not exist, or it may not be valid resume data).
 
 *Candidate Entity*
 - Number
