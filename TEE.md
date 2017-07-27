@@ -1,9 +1,9 @@
 # Taleo Enterprise Edition (TEE)
 
 ## FAQ
-*Why are there more candidates in TEE than in mySupply?*
+*Why are there more candidates in TEE than in MyCandidates?*
 
-Not all candidates will be uploaded. If the candidate does not meet the requirements stated here, they will not be found in mysupply. This can sometimes be a large percentage (think 50%, not 5%). See the filters described later in this document.
+Not all candidates will be uploaded. If the candidate does not meet the requirements stated here, they will not be found in MyCandidates. This can sometimes be a large percentage (think 50%, not 5%). See the filters described later in this document.
 
 *Why does a query in TEE not produce the same candidates as in myCandidates?*
 
@@ -12,13 +12,13 @@ In general we do not recommend comparing search results from TEE to search resul
 ## Integration Overview
 Taleo offers a set of APIs utilized by myCandidates, known commonly as the "Bulk APIs" but technically referred to as the Integration Management Service.
 
-The TEE integration works by sending a query to the Taleo server. The server then builds a document consisting of all of the "entities" that match the query. The integration then requests this document by pages, and then traverses the document page, creating a candidate form each row in the document. The candidate is then sent to the mySupply upload API. In other words:
+The TEE integration works by sending a query to the Taleo server. The server then builds a document consisting of all of the "entities" that match the query. The integration then requests this document by pages, and then traverses the document page, creating a candidate from each row in the document. The candidate is then sent to the MyCandidates upload API. In other words:
 
 1. query is sent
 2. document is built
 3. document is retrieved a page at a time
 4. each row in the page is turned into a candidate
-5. the candidate is uploaded to mySupply
+5. the candidate is uploaded to MyCandidates
 
 ## Technical Details
 The endpoints used by the integration are:
@@ -30,7 +30,7 @@ The Taleo queries used are fairly complex, but have the effect of only importing
 - must have an attachment
 - attachment must be marked as type RESUME, or have the word “resume” or “CV” in the title (case-insensitive)
  
-Further, mySupply requires for all candidates:
+Further, MyCandidates requires for all candidates:
 - The document must be at least 100 characters long
 - An email must either be on the candidate or successfully parsed from the resume
 Some resumes will fail to parse, in which case the candidate will be rejected.
@@ -62,7 +62,7 @@ Currently there are two supported queries, Profile Entity and Candidate Entity. 
 - ApplicationText,PastedResume
 
 ## Needs for a New Fulfillment
-In order to access the IMS APIs, mySupply needs an account created with the following "rights":
+In order to access the IMS APIs, MyCandidates needs an account created with the following "rights":
 
 - User type = Integration
 - User permissions:
