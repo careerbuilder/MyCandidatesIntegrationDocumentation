@@ -69,3 +69,5 @@ In order to access the IMS APIs, MyCandidates needs an account created with the 
   - Allow this user to perform integration tasks
   - Allow batch export
   - Allow batch import
+
+MyCandidatesIntegrationDocumentation Copyright 2017 CareerBuilder, LLC This product includes software developed at CareerBuilder, LLC (http://www.careerbuilder.com)
