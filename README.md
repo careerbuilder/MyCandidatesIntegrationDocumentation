@@ -9,6 +9,7 @@ FTP - myCandidates uses FTP to obtain a file containing candidate information
 # API integrations
 [Taleo Enterpise Endition (TEE)](TEE.md)
 # FTP integrations
+[CDS FTP Server](FTP.md)
 
 MyCandidatesIntegrationDocumentation
 Copyright 2017 CareerBuilder, LLC
